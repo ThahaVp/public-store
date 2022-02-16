@@ -3,6 +3,14 @@ var router = express.Router();
 var rvHelper = require('../helpers/rv-helper')
 
 
+router.get('/test', (req,res)=>{
+  res.json({
+    status: 1,
+    time: "test",
+    date: "done"
+  })
+})
+
 router.post('/addExpense', (req,res)=>{
   
   let ts = Date.now();
