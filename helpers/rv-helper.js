@@ -5,26 +5,6 @@ var objectId = require('mongodb').ObjectId
 
 module.exports = {
 
-    // doLogin:(superData)=>{
-    //     return new Promise(async(resolve, reject)=>{
-    //         var responce = {}
-    //         let superMan = await db.get().collection(constants.SUPER_COLLECTION).findOne({id:superData})
-    //         if(superMan)
-    //         {
-    //             responce.user = superMan
-    //             responce.status = true
-    //             resolve(responce)
-    //         }
-    //         else
-    //         {
-    //             responce.user = null
-    //             responce.status = false
-    //             resolve(responce)
-    //         }
-    //     })
-        
-    // },
-
     addExpense:(data)=>{
         return new Promise((resolve, reject)=>{
             db.get().collection(constants.RV_EXPENSE).insertOne(data).then((responce)=>{

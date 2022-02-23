@@ -5,6 +5,8 @@ module.exports = {
     CART_COLLECTION:'cart',
     EXPENSES_COLLECTION:'expense',
 
+    BYTES_INVOICE:'bytes_invoice',
+
     RV_EXPENSE:'rv_expense',
     RV_SALE:'rv_sale',
     RV_STOCK:'rv_stock',
